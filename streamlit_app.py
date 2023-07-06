@@ -1,7 +1,7 @@
 import streamlit
-streamlit.title('my parent new healthy diner')
-streamlit.header('breakfast menu')
-streamlit.text('blueberry oatmeal')
-streamlit.text('oats smoothie')
-streamlit.text('banana oats pancakes')
-streamlit.text('spinach patties')
+streamlit.title('My MOM's New Healthy Diner🥣 🥗 🐔 🥑🍞')
+streamlit.header('Breakfast Specials 🥣 🥗 🐔 🥑🍞')
+streamlit.text('🥣 🥗 Blueberry Oatmeal')
+streamlit.text('🥑🍞 Oats avacado sandwich')
+streamlit.text('🥗 🐔Banana oats pancakes')
+streamlit.text('🥗 Spinach Roll')
