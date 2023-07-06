@@ -5,3 +5,5 @@ streamlit.text('🥣 🥗 Blueberry Oatmeal')
 streamlit.text('🥑🍞 Oats avacado sandwich')
 streamlit.text('🥗 🐔Banana oats pancakes')
 streamlit.text('🥗 Spinach Roll')
+streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+
