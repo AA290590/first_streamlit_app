@@ -20,18 +20,22 @@ streamlit.dataframe(fruits_to_show)
 #fruits_selected=streamlit.multiselect("pick some fruit's:",list(my_fruit_list.index),['Avocado','Strawberries'])
 #fruits_to_show = my_fruit_list.loc[fruits_selected]
 
-
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice)
 streamlit.header("Fruityvice Fruit Advice!")
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 #streamlit.text(fruityvice_response.json()) #writes the data to screen 
 
+
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice)
+
 #take the json version of it and normalise
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output it screen as table
 streamlit.dataframe(fruityvice_normalized)
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
-streamlit.write('The user entered ', fruit_choice)
+
 
 
 
