@@ -44,7 +44,7 @@ streamlit.dataframe(fruityvice_normalized)
 my_cnx = snowflake.connector.connect(
                 user = "apoorva",
 password = "Amol1#12",
-account = "as58208.ca-central-1.aws.snowflakecomputing.com" ,
+account = "as58208.ca-central-1.aws" ,
 warehouse = "PC_RIVERY_WH" ,
 database = "PC_RIVERY_DB" ,
 schema = "public",
