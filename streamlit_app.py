@@ -44,11 +44,11 @@ streamlit.dataframe(fruityvice_normalized)
 my_cnx = snowflake.connector.connect(
                 user = "apoorva",
 password = "Amol1#12",
-account = "as58208.aws-ca-central-1.cloud" ,
+account = "as58208" ,
 warehouse = "PC_RIVERY_WH" ,
 database = "PC_RIVERY_DB" ,
 schema = "public",
-role = "sysadmin"
+role = "accountadmin"
                 )
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
