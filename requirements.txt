@@ -3,7 +3,6 @@
 pandas
 pyarrow
 streamlit
-snowflake
 snowflake-connector-python
 
 
