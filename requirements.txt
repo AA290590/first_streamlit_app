@@ -2,7 +2,6 @@
 #snowflake-connector-python[pandas]
 pandas
 streamlit
-snowflake
 snowflake-connector-python
 
 
