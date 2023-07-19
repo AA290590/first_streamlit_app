@@ -41,15 +41,15 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 # my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cnx = snowflake.connector.connect(
+#my_cnx = snowflake.connector.connect(
                 user = "apoorva",
-password = "Amol1#12",
-account = "as58208.ca-central-1.aws" ,
-warehouse = "PC_RIVERY_WH" ,
-database = "PC_RIVERY_DB" ,
-schema = "public",
-role = "accountadmin"
-                )
+#password = "Amol1#12",
+#account = "as58208.ca-central-1.aws" ,
+#warehouse = "PC_RIVERY_WH" ,
+#database = "PC_RIVERY_DB" ,
+#schema = "public",
+#role = "accountadmin"
+ #               )
 my_cur = my_cnx.cursor()
 my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchone()
