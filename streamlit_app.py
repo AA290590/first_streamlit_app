@@ -42,7 +42,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 # my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cnx = snowflake.connector.connect(
-                user = "apoorva",
+ #               user = "apoorva",
 #password = "Amol1#12",
 #account = "as58208.ca-central-1.aws" ,
 #warehouse = "PC_RIVERY_WH" ,
