@@ -64,7 +64,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchall()
 streamlit.header("fruit load list contains")
-streamlit.dataframe(my_data_row)
+add_my_fruit=streamlit.dataframe(my_data_row)
 streamlit.header("what fruit you would like to add")
 
 my_cur.execute("insert into fruit_load_list values ('" + add_my_fruit + "')")
