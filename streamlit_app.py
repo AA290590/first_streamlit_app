@@ -70,5 +70,5 @@ streamlit.header("what fruit you would like to add")
 add_my_fruit=my_cur.execute("insert into fruit_load_list values ('" + add_my_fruit + "')")
 streamlit.dataframe(add_my_fruit)
 #my_data_row = my_cur.fetchone()
-streamlit.text(thanks for adding)
+streamlit.text('thanks for adding')
 
