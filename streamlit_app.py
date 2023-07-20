@@ -105,8 +105,8 @@ if streamlit.button('fruit load list contains'):
 
 #my_data_row = my_cur.fetchall()
 #if streamlit.button('fruit load list contains'):
-   # my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-   # my_data_row=get_fruit_load_list()
+# my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+# my_data_row=get_fruit_load_list()
 #streamlit.header("fruit load list contains")
 #streamlit.dataframe(my_data_row)
 #streamlit.header("what fruit you would like to add")
@@ -117,7 +117,7 @@ if streamlit.button('fruit load list contains'):
 #streamlit.dataframe(my_data_row)
 #my_data_row = my_cur.fetchone()
 #streamlit.write('thanks for adding',add_my_fruit)
-add_my_fruit = streamlit.text_input('what fruit you would like to add','jackfruit')
-streamlit.write('Thanks for adding ', add_my_fruit)
+#add_my_fruit = streamlit.text_input('what fruit you would like to add','jackfruit')
+#streamlit.write('Thanks for adding ', add_my_fruit)
 #my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
