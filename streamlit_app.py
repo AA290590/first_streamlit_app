@@ -1,7 +1,6 @@
 import streamlit
 import pandas
 import requests
-streamlit.stop()
 #snowflake-connector-python
 import snowflake
 import snowflake.connector
@@ -60,6 +59,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 #display the table
 #streamlit.dataframe(fruits_to_show)
+streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
