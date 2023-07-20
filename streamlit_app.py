@@ -73,4 +73,6 @@ streamlit.dataframe(my_data_row)
 #streamlit.dataframe(my_data_row)
 #my_data_row = my_cur.fetchone()
 #streamlit.write('thanks for adding',add_my_fruit)
+fruit_choice = streamlit.text_input('what fruit you would like to add','jackfruit')
+streamlit.write('The user entered ', fruit_choice)
 
