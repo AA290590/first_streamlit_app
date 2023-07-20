@@ -75,7 +75,7 @@ if streamlit.button('fruit load list contains'):
 #fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output it screen as table
 #streamlit.dataframe(fruityvice_normalized)
-  # my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+# my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cnx = snowflake.connector.connect(
  #               user = "apoorva",
 #password = "Amol1#12",
@@ -119,5 +119,5 @@ if streamlit.button('fruit load list contains'):
 #streamlit.write('thanks for adding',add_my_fruit)
 add_my_fruit = streamlit.text_input('what fruit you would like to add','jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
