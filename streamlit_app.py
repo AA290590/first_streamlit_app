@@ -50,7 +50,14 @@ try:
       streamlit.dataframe(back_from_function)
 except URLError as e:
   streamlit.error()
-  
+def get_fruit_load_list():
+    with my_cnx.cursor() as my_cur:
+         my_cur.execute("select * from fruit_load_list")
+         return my_cur.fetchall()
+if streamlit.button('fruit load list contains'):
+    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+    my_data_row=get_fruit_load_list()
+    streamlit.dataframe(my_data_row)
 
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 #streamlit.text(fruityvice_response.json()) #writes the data to screen 
@@ -82,7 +89,7 @@ except URLError as e:
 
 #display the table
 #streamlit.dataframe(fruits_to_show)
-#streamlit.stop()
+####streamlit.stop()
 
 #my_cur = my_cnx.cursor()
 def get_fruit_load_list():
