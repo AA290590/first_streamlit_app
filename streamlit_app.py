@@ -19,14 +19,6 @@ fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.in
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
-#pick the fruits they want to
-#streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
-
-#fruits_selected=streamlit.multiselect("pick some fruit's:",list(my_fruit_list.index),['Avocado','Strawberries'])
-#fruits_to_show = my_fruit_list.loc[fruits_selected]
-
-####fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
-#streamlit.write('The user entered ', fruit_choice)
 #CREATING A FUNCTION
 def get_fruityvice_data(this_fruit_choice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
