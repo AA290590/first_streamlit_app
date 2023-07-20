@@ -30,7 +30,7 @@ streamlit.write('The user entered ', fruit_choice)
 streamlit.header("Fruityvice Fruit Advice!")
 #new to display in api##
 
-fruit_choice== streamlit.text_input('What fruit would you like information about?')
+fruit_choice = streamlit.text_input('What fruit would you like information about?')
 if not fruit_choice:
   streamlit.error("please select the fruit to get information")
 else:
